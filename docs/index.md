@@ -1,5 +1,5 @@
 <style>
-:root { --bg:#0b1220; --text:#e9eef7; --muted:#9aa7b7; --accent:#3b82f6; --card:#111827; }
+:root { --bg:#0b1220; --text:#e9eef7; --muted:#9aa7b7; --accent:#3b82f6; --card:#111827; --chip:#1f2937; }
 *{box-sizing:border-box}
 body{font-family:-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;line-height:1.5}
 a{color:var(--accent);text-decoration:none;font-weight:600}
