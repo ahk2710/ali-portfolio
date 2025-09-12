@@ -1,10 +1,9 @@
 # 001 — Airport Weather (Open-Meteo)
 
-**Goal:** Learn API wrangling → pandas → a quick matplotlib chart. Later, tie weather to delays.
+Fetch hourly weather for CLT and plot temperature for the next 72 hours.
 
-**Plan (v0):**
-1. Fetch 7-day hourly weather for CLT (Open-Meteo).
-2. Put into pandas, plot temperature.
-3. Add wind/visibility next and save a PNG.
+![CLT temperature (next 72h)](../../assets/001_clt_temp.png)
 
-Why it matters: weather drives ops. Even a toy API chart is step one toward delay prediction.
+**Why it matters:** Weather drives ops. Even this small chart is step one toward delay prediction.
+
+[View the code on GitHub](https://github.com/ahk2710/ali-portfolio/tree/main/projects/001-open-meteo-airport-weather)
