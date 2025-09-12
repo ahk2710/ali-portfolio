@@ -1,4 +1,4 @@
-# 001  Airport Weather (Open-Meteo)
+# 001 — Airport Weather (Open-Meteo)
 
 **Goal:** Learn API wrangling + pandas + a quick matplotlib chart. Later, relate weather to delays.
 
