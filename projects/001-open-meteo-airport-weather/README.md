@@ -9,3 +9,6 @@
 
 ## Why it matters
 Weather drives ops. Even a tiny API chart is step one toward delay prediction and decision support.
+
+**Files:**
+- `fetch_weather.py` — prints first 5 rows from Open-Meteo
