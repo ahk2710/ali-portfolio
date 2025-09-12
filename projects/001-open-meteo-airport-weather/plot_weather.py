@@ -31,7 +31,10 @@ df = df.set_index("time")
 
 # plot temperature
 plt.figure()
-df["temperature_2m"].plot(title=f"{airport_code} — Temperature (next 72h)")
+from datetime import datetime, timezone
+stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+df["temperature_2m"].plot(title=f"{airport_code} — Temperature (next 72h) • {stamp}")
 plt.xlabel("Time")
 plt.ylabel("Temp (°C)")
 plt.tight_layout()
