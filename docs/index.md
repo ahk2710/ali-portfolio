@@ -1,9 +1,11 @@
 # Ali Khan — Portfolio
 
-Real-world analytics projects. Updated when there's something worth showing.
+Real-world analytics projects. Updated when there’s something worth showing.
 
 ## Projects
-- **001 — Airport Weather (Open-Meteo)** → [Project folder on GitHub](https://github.com/ahk2710/ali-portfolio/tree/main/projects/001-open-meteo-airport-weather)
+- **001 — Airport Weather (Open-Meteo)**
+  - 👉 [Project page](showcase/001-open-meteo-airport-weather/)
+  - 🖼️ [View latest chart](https://ahk2710.github.io/ali-portfolio/assets/001_clt_temp.png)
 
 ## About
 Ops performance analyst turning noisy operational data into clear decisions.
