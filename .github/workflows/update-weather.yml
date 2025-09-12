@@ -1,8 +1,17 @@
 name: Update weather chart
+
 on:
   schedule:
-    - cron: "0 6 * * *"   # every day at 06:00 UTC
-  workflow_dispatch:       # allow manual run
+    - cron: "0 * * * *"   # every hour at :00 UTC
+  workflow_dispatch:       # allow manual run from the Actions tab
+
+# allow this workflow to push the refreshed PNG
+permissions:
+  contents: write
+
+concurrency:
+  group: update-weather
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -14,7 +23,8 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements.txt
-      - run: python projects/001-open-meteo-airport-weather/plot_weather.py
+      - name: Generate chart
+        run: python projects/001-open-meteo-airport-weather/plot_weather.py
       - name: Commit and push chart
         run: |
           git config user.name "github-actions[bot]"
